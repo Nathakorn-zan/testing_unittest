@@ -9,66 +9,74 @@ public class AppTest
 {
 	
 	Fahrenheit object;
+	
 	@Before
-
 	public void newClassFahrenheit() {
 		object = new Fahrenheit();
 	}
+	
 	@Test
 	public void testResult0Input0() {
-		double input = 0 ;
+		double input = 0;
 		double expected = 0;
 		object.input(input);
-		double actual = object.getCelcius();
-		assertEquals(expected, actual,2);
+		double actual = object.getCelsius();
+		assertEquals(expected, actual, 2);
 	}
+	
 	@Test
 	public void testResult1000Input1000() {
-		double input = 1000 ;
+		double input = 1000;
 		double expected = 1000;
 		object.input(input);
-		double actual = object.getCelcius();
-		assertEquals(expected, actual,2);
+		double actual = object.getCelsius();
+		assertEquals(expected, actual, 2);
 	}
+	
 	@Test
-	public void testResultmin1000Input1000() {
-		double input = -1000 ;
+	public void testResultMinus1000InputMinus1000() {
+		double input = -1000;
 		double expected = -1000;
 		object.input(input);
-		double actual = object.getCelcius();
-		assertEquals(expected, actual,2);
+		double actual = object.getCelsius();
+		assertEquals(expected, actual, 2);
 	}
+	
 	@Test
-	public void testResulTrueInput0() {
-		double input = 0 ;
+	public void testResultTrueInput0() {
+		double input = 0;
 		boolean expected = true;
 		boolean actual = object.isBound(input);
 		assertEquals(expected, actual);
 	}
+	
 	@Test
-	public void testResulTrueInput1000() {
-		double input = 1000 ;
+	public void testResultTrueInput1000() {
+		double input = 1000;
 		boolean expected = true;
 		boolean actual = object.isBound(input);
 		assertEquals(expected, actual);
 	}
+	
 	@Test
-	public void testResulTrueInputmin1000() {
-		double input = -1000 ;
+	public void testResultTrueInputMinus1000() {
+		double input = -1000;
 		boolean expected = true;
 		boolean actual = object.isBound(input);
 		assertEquals(expected, actual);
 	}
+	
 	@Test
-	public void testResulTrueInput2000() {
-		double input = 2000 ;
+	public void testResultTrueInput2000() {
+		double input = 2000;
 		boolean expected = false;
 		boolean actual = object.isBound(input);
 		assertEquals(expected, actual);
 	}
+	
 	@Test
-	public void testResulTrueInputmin2000() {
-		double input = -2000 ;
+	public void testResultTrueInputMinus2000() {
+		double input = -2000;
 		boolean expected = false;
 		boolean actual = object.isBound(input);
 		assertEquals(expected, actual);
@@ -158,3 +166,11 @@ public class AppTest
 		assertEquals(expected, actual);
 	}
 }
+
+
+
+
+
+
+
+
