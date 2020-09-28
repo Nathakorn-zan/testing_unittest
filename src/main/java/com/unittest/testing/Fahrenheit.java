@@ -1,19 +1,23 @@
 package com.unittest.testing;
+
 public class Fahrenheit {
-	private double celsius;
-	public double getCelsius() {
-		return celsius;
+	private double celcius;
+	
+	public double getCelcius() {
+		return celcius;
 	}
-	public void input(double celsius) {
-		this.celsius = celsius;
+
+	public void input(double celcius) {
+		this.celcius = celcius;
 	}
-	public boolean isBound(double celsius) {
-		boolean result;
-		if(celsius >= -1000 && celsius <= 1000 ) {
-			result = true;	
-		}else {
-			result = false;
+	
+	public boolean isBound(double celcius) {
+		boolean isResult;
+		if(celcius >= -1000 && celcius <= 1000) {
+			isResult = true;
+		}else{
+			isResult = false;
 		}
-		return result;
+		return isResult;
 	}
 }
